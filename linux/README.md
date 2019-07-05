@@ -17,5 +17,8 @@ chmod 600 ~/.ssh/authorized_keys
 # Create Symbolic link
 ln -s ~/source_folder ~/dest_folder
 
-# Setup
-[Setup Docker on Cent OS](SetupDocker.md)
+# Setup on Cent OS
+* [Setup Git](SetupGit.md)
+* [Setup Node.js and NPM](SetupNPM.md)
+* [Setup MySQL Client](SetupMySQLClient.md)
+* [Setup Docker CE](SetupDockerCE.md)
