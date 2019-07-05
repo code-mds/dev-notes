@@ -14,5 +14,8 @@ cat id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-# Setup
-[Setup Docker on Cent OS](SetupDocker.md)
+# Setup on Cent OS
+[Setup Git](SetupGit.md)
+[Setup Node.js and NPM](SetupNPM.md)
+[Setup MySQL Client](SetupMySQLClient.md)
+[Setup Docker CE](SetupDockerCE.md)
