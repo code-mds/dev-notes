@@ -43,10 +43,16 @@ sudo yum install -y python-pip
 
 
 * Install Docker Compose:
-`sudo pip install docker-compose`
+```
+sudo pip install docker-compose
+```
 
 * Upgrade your Python packages on CentOS 7 to get docker-compose to run successfully:
-`sudo yum upgrade python`
+```
+sudo yum upgrade python
+```
 
 * Verify the installation:
-`docker-compose version`
+```
+docker-compose version
+```
