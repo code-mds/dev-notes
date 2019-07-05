@@ -1,5 +1,25 @@
 # Get Environment information
 * Print Linux Distribution: `cat /etc/os-release`
+* Print process status: `ps aux`
+* List open file handles: `find . -type f | wc -l`
+* Print last 20 rows and wait for updates `tail -n 20 -f /appdata/node1.log`
+* Stop Docker Service `sudo service docker stop` 
+* Start Docker Service `sudo service docker start`
+
+# YUM
+* Find which package contain a command (e.g. ifconfig)
+```
+yum provides <command>
+yum install net-tools
+```
+* Update all packages
+```
+yum update
+```
+* Update a package
+```
+yum update <packagename>
+```
 
 # Remote Authorization with public key
 * Define the authorized keys on the remote machine. 
