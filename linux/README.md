@@ -1,58 +1,18 @@
 # Get Environment information
 * Print Linux Distribution: `cat /etc/os-release`
 
-# Cent OS
-## Install Docker CE
-* Setup the repository:
+# Remote Authorization with public key
+* Define the authorized keys on the remote machine. 
 ```
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+scp ~/.ssh/id_rsa.pub <username>@<public_ip>
 ```
-
-* Install Docker CE:
+* create an .ssh folder on the remote server with permission: 700 
 ```
-sudo yum install docker-ce
-```
-
-* Add your user to the docker group:
-```
-sudo usermod -aG docker $(whoami)
+mkdir ~/.ssh
+chmod 700 ~/.ssh/
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
 ```
 
-* Set Docker to start automatically at boot time:
-```
-sudo systemctl enable docker.service
-```
-
-* Start the Docker service:
-```
-sudo systemctl start docker.service
-```
-
-## Install Docker Compose
-
-* Install Extra Packages for Enterprise Linux:
-```
-sudo yum install epel-release
-```
-
-* Install python-pip:
-```
-sudo yum install -y python-pip
-```
-
-
-* Install Docker Compose:
-```
-sudo pip install docker-compose
-```
-
-* Upgrade your Python packages on CentOS 7 to get docker-compose to run successfully:
-```
-sudo yum upgrade python
-```
-
-* Verify the installation:
-```
-docker-compose version
-```
+# Setup
+[Setup Docker on Cent OS](SetupDocker.md)
