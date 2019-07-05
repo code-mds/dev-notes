@@ -1,4 +1,4 @@
-* Install MySQL Client
+* Install MySQL Client (CentOS)
 ```
 yum install mysql
 ```
