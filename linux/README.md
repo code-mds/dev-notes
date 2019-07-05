@@ -15,7 +15,7 @@ chmod 600 ~/.ssh/authorized_keys
 ```
 
 # Setup on Cent OS
-[Setup Git](SetupGit.md)
-[Setup Node.js and NPM](SetupNPM.md)
-[Setup MySQL Client](SetupMySQLClient.md)
-[Setup Docker CE](SetupDockerCE.md)
+* [Setup Git](SetupGit.md)
+* [Setup Node.js and NPM](SetupNPM.md)
+* [Setup MySQL Client](SetupMySQLClient.md)
+* [Setup Docker CE](SetupDockerCE.md)
