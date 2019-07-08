@@ -48,6 +48,10 @@ docker exec -it 7b7501f3f8a1 /bin/bash
 ```
 
 ## CLEAN
+* stop running containers
+```
+docker container stop $(docker container ls -aq)
+```
 * remove all unused objects
 ```
 docker system prune
@@ -64,7 +68,7 @@ docker container stop CONTAINER_ID / CONTAINER_NAME
 ```
 docker container rm CONTAINER_ID / CONTAINER_NAME
 ```
-* stop and remove (force) running containers
+* remove image
 ```
-docker container -f rm $(docker container ls -aq)
+docker rmi images IMAGE
 ```
