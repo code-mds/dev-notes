@@ -6,6 +6,13 @@
 * Stop Docker Service `sudo service docker stop` 
 * Start Docker Service `sudo service docker start`
 
+# Firewall
+```
+sudo firewall-cmd --list-all
+sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
+sudo firewall-cmd --reload
+```
+
 # YUM
 * Find which package contain a command (e.g. ifconfig)
 ```
